@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planning Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <style>
+        body {
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: url('https://source.unsplash.com/1600x900/?travel') no-repeat center;
+            background-size: cover;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .feature-box {
+            padding: 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">✈ Travel Planner</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Plan Your Next Adventure!</h1>
+        <p>Discover the best destinations and plan effortlessly.</p>
+        <button class="btn btn-primary btn-lg">Get Started</button>
+    </div>
+
+    <div class="container mt-5" id="features">
+        <h2 class="text-center mb-4">Why Choose Us?</h2>
+        <div class="row">
+            <div class="col-md-4" data-aos="fade-right">
+                <div class="feature-box">
+                    <i class="fas fa-map-marked-alt fa-3x mb-3"></i>
+                    <h5>Personalized Plans</h5>
+                    <p>Tailored trips based on your preferences.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="feature-box">
+                    <i class="fas fa-plane fa-3x mb-3"></i>
+                    <h5>Easy Booking</h5>
+                    <p>Compare prices and book flights hassle-free.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-left">
+                <div class="feature-box">
+                    <i class="fas fa-hotel fa-3x mb-3"></i>
+                    <h5>Best Accommodations</h5>
+                    <p>Find hotels that suit your budget and style.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-center text-white py-3 mt-5" id="contact">
+        <p>&copy; 2025 Travel Planner | Contact us: info@travelplanner.com</p>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
